@@ -5,13 +5,13 @@ document
     // adiciona o ouvinte do evento 'submit'
     event.preventDefault(); // previne o comportamento padrão do formulário, ou seja, impede que ele seja enviado e recarregue a página
 
-    const name = document.getElementById("nome").value; // capturar os valores dos campos do formulário pelo id
+    const nome = document.getElementById("nome").value; // capturar os valores dos campos do formulário pelo id
     const cpf = document.getElementById("cpf").value;
     const email = document.getElementById("email").value;
-    const password = document.getElementById("senha").value;
+    const senha = document.getElementById("senha").value;
 
     // requisição http para o endpoint de cadastro de usuário
-    fetch("http://localhost:5000/api/v1/user", {
+    fetch("http://localhost:5000/projeto_de_reserva/cadastro", {
       // realiza uma chamada HTTP para o servidor (a rota definida)
       method: "POST",
       headers: {
@@ -20,7 +20,7 @@ document
         "Content-Type": "application/json", // correção do formato
       },
       // transforma os dados do formulário em uma string json para serem enviados no corpo da requisição
-      body: JSON.stringify({ name, cpf, email, password }),
+      body: JSON.stringify({ nome, cpf, email, senha }),
     })
       .then((response) => {
         // tratamento da resposta do servidor /api

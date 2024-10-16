@@ -29,6 +29,14 @@ body {
     margin-bottom: 10px; /* Distancia */
 }
 
+.form formulario-registro{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
 .input-group input {
     width: 100%;
     padding: 10px;
@@ -36,7 +44,7 @@ body {
     border: none;
     outline: none;
     font-size: 16px; /*mudanças das palavras no group*/
-    }
+}
  
     
 button {
