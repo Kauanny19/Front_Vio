@@ -37,7 +37,6 @@ body {
     outline: none;
     font-size: 16px; /*mudanças das palavras no group*/
     }
-
  
     
 button {
@@ -66,7 +65,8 @@ button {
 
 footer{
     background-color: #B92626 ;
-    padding: 20px;
+    color: white; /* Cor do texto do rodapé */
+    padding: 17px;
     text-align:center; /*Alinha texto do rodapé ao centro*/
     bottom: 0;/* Alinha o rodapé abaixo da página*/
     position: absolute;/*Posiciona o rodapé de forma absoluta em relação ao body*/
