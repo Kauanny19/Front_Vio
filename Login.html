@@ -1,49 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SENAI - Login</title>
-    <link rel="icon" href="images.png" type ="image/png">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
+    <link rel="icon" href="images.png" type="image/png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-  </header>
-    <div class="login-container">
-        <div class="login-box">
-          <img src="https://logodownload.org/wp-content/uploads/2019/08/senai-logo.png" alt="SENAI Logo" class="senai-logo">
-          <br>
-          <br>
-          <br>
-          
-          <div class="input-group">
-                    <input type="text" name="email" placeholder="Email" required>
-                </div>
-                <br>
-                <br>
+  <body>
+    <header></header>
+    <main>
+      <section>
+        <form id="formulario-login">
+          <div class="senai-logo">
+            <img src="Icone_senai.png" alt="SENAI Logo" />
+          </div>
 
-                <div class="input-group">
-                    <input type="password" name="senha" placeholder="Senha" required>
-                </div>
-                <br>
-                <br>
-                <button type="submit">Entrar</button>
-                <p class="register-link">Não tem cadastro? <a href="cadastro.html">Cadastrar-se</a></p>
-            </form>
-        </div>
-    </div>
+          <section class="login-form">
+            <!--Entrada do Email-->
+            <label for="email"></label>
+            <input type="text" id="email" placeholder="Email" required />
+
+            <!--Entrada da Senha-->
+            <label for="senha"></label>
+            <input type="password" id="senha" placeholder="Senha" required />
+
+            <div class="button">
+              <button type="submit">Entrar</button>
+              <p class="register-link">
+                Não tem cadastro? <a href="cadastro.html">Cadastrar-se</a>
+              </p>
+            </div>
+          </section>
+        </form>
+      </section>
+    </main>
+
     <footer>
-        <p>&copy; ReservasDeSala - Desenvolvido por: Hyago, Kauanny e Gabriel</p>
+      <p>&copy; ReservasDeSala - Desenvolvido por: Hyago, Kauanny e Gabriel</p>
     </footer>
     <script>
-        /* script como um arquivo 'js'*/
-        function mostrarMensagem() {
-          alert("Logado");
-        }
-      </script>
-      <script src="app.js"></script>
-    </body>
-  </html>
-  
+      /* script como um arquivo 'js'*/
+      function mostrarMensagem() {
+        alert("Logado");
+      }
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>
